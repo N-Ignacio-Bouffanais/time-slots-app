@@ -27,22 +27,25 @@ body {
   background-color: var(--laze-lemon);
   width: 80vw;
   color: var(--black);
-  height: 6rem;
-  border-radius: 1rem;
-  padding: 0.6rem 1.5rem 0 1.5rem;
-  margin: 1.8rem auto;
-}
-.card-container p {
-  font-size: 2rem;
-  font-weight: 700;
-}
-.card-container svg {
-  font-size: 5rem;
-}
-.content-card {
+  height: 5rem;
+  border-radius: 0.8rem;
+  padding: 0 1.5rem;
+  margin: 1.5rem auto;
   display: flex;
   justify-content: space-between;
+}
+.card-container p {
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+.right-content{
   align-items: center;
+  display: flex;
+}
+.right-content svg {
+  font-size: 4rem;
+  margin-right: 1.5rem;
 }
 .switch {
   position: relative;

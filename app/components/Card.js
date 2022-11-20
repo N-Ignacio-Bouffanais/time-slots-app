@@ -2,11 +2,14 @@ import { FaMotorcycle } from 'react-icons/fa'
 export default function Card (props) {
   return (
     <div className='card-container'>
-      <div className='content-card'>
+      <div className='left-content'>
+        <p>{props.time}</p>
+      </div>
+      <div className='right-content'>
         <FaMotorcycle />
-        <label class='switch'>
+        <label className='switch'>
           <input type='checkbox' />
-          <span class='slider round' />
+          <span className='slider round' />
         </label>
       </div>
     </div>
