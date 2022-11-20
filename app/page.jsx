@@ -4,7 +4,16 @@ import Card from './components/Card'
 export default function HomePage () {
   return (
     <div className='container'>
-      <h1>Homepage</h1>
+      <h1>
+        Motos disponibles:<span>1</span>
+      </h1>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
       <Card />
     </div>
   )

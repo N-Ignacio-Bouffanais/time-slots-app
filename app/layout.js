@@ -3,7 +3,7 @@ export default function RootLayout ({ children }) {
     <html>
       <head>
         <meta charset='UTF-8' />
-        <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <meta
           name='description'
           content='application of time slots with intervals of 30 minutes from 8:00 to 8 pm, built with nextjs13 and mongoDB'
