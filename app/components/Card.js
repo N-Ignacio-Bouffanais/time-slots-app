@@ -1,4 +1,5 @@
 import { FaMotorcycle } from 'react-icons/fa'
+
 export default function Card (props) {
   return (
     <div className='card-container'>

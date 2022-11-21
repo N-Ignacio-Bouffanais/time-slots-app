@@ -1,29 +1,12 @@
-import { useReducer } from 'react'
+'use client'
 import '../styles/global.css'
 import Card from './components/Card'
-import MotoContext from './context/Motocycles/Motocycles'
 
-export default function HomePage (props) {
-  const initialState = {
-    motos: [],
-    selectedMoto: null
-  }
-  const [state, dispatch] = useReducer(useReducer, initialState)
-
-  const getMotos = () => {}
-
+export default function HomePage () {
   return (
     <div className='container'>
-      <MotoContext.Provider value={{
-        motos: state.motos,
-        selectedMoto: state.selectedMoto,
-        getMotos
-      }}
-      >
-        {props.children}
-      </MotoContext.Provider>
       <h1>
-        Motos disponibles:<span>&nbsp; </span>
+        Motos disponibles:<span>&nbsp;</span>
       </h1>
       <Card time='8:00 - 8:30' />
       <Card time='8:30 - 9:00' />

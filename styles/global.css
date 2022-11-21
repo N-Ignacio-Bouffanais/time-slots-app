@@ -33,6 +33,7 @@ body {
   margin: 1.5rem auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .card-container p {
   font-size: 2.2rem;
