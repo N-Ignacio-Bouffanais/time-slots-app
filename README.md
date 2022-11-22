@@ -10,7 +10,8 @@
 
 ### Screenshot
 
-![solution](./src/public/images/solution.JPG)
+![solution](./public/solution.JPG)
+![movile-solution](./public/solution-movile.JPG)
 
 ## Author
 
