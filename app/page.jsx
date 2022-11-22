@@ -3,6 +3,8 @@ import '../styles/global.css'
 import Card from './components/Card'
 import cards from './cards'
 import React, { useReducer } from 'react'
+import Title from './components/Title'
+import NotAvailable from './components/NotAvailable'
 
 export const CountContext = React.createContext()
 
@@ -23,9 +25,9 @@ export default function HomePage () {
   return (
     <>
       <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
-        <h1>
-          Motos disponibles:<span>&nbsp;{count}</span>
-        </h1>
+        <>
+          {count === 0 ? <NotAvailable /> : <Title title={count} />}
+        </>
         <div className='container'>
           {
             cards.map(card => (
