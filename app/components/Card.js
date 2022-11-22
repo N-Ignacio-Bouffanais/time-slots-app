@@ -1,11 +1,11 @@
 import { CountContext } from '../page'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 
 export default function Card (props) {
+  const [isActive, setIsActive] = useState(false)
   const num = 0
   const num2 = 8
   const countContext = useContext(CountContext)
-  console.log(countContext.countState)
   return (
     <div className='card-container'>
       <div className='left-content'>
@@ -13,9 +13,13 @@ export default function Card (props) {
       </div>
       <div className='right-content'>
         <button
-          className='Iniciar button' onClick={() => {
+          style={{
+            display: isActive ? 'none' : 'block'
+          }}
+          className='Iniciar button' id='inicio' onClick={() => {
             if (countContext.countState !== num) {
               countContext.countDispatch('decrement')
+              setIsActive(current => !current)
             }
             if (countContext.countState <= 0) {
               console.log('no hay motos disponibles')
@@ -24,9 +28,13 @@ export default function Card (props) {
         >Iniciar
         </button>
         <button
+          style={{
+            display: isActive ? 'block' : 'none'
+          }}
           className='Terminar button' onClick={() => {
             if (countContext.countState !== num2) {
               countContext.countDispatch('increment')
+              setIsActive(current => !current)
             }
           }}
         >Terminar
