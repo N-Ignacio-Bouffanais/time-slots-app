@@ -16,5 +16,6 @@
 ## Author
 
 - Website - [Nicolas_Bouffanais](https://nicolas-bouffanais.vercel.app/src/index.html)
-- Frontend Mentor - [@N-Ignacio-Bouffanais](https://www.frontendmentor.io/profile/N-Ignacio-Bouffanais)
 - Twitter - [@N_Bouffanais](https://twitter.com/N_Bouffanais)
+- Frontend Mentor - [@N-Ignacio-Bouffanais](https://www.frontendmentor.io/profile/N-Ignacio-Bouffanais)
+
