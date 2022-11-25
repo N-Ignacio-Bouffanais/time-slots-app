@@ -1,8 +1,8 @@
 'use client'
 import '../styles/global.css'
+import React, { useReducer } from 'react'
 import Card from './components/Card'
 import cards from './cards'
-import React, { useReducer } from 'react'
 import Title from './components/Title'
 import NotAvailable from './components/NotAvailable'
 
