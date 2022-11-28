@@ -16,13 +16,13 @@ export default function Card (props) {
           style={{
             display: isActive ? 'none' : 'block'
           }}
-          className='Iniciar button' id='inicio' onClick={() => {
+          className='Iniciar button' id='inicio' onClick={(e) => {
             if (countContext.countState !== num) {
               countContext.countDispatch('decrement')
               setIsActive(current => !current)
             }
-            if (countContext.countState <= 0) {
-              console.log('no hay motos disponibles')
+            if (countContext.countState === 0) {
+              alert('no hay motociclistas disponibles')
             }
           }}
         >Iniciar
